@@ -26,4 +26,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `AppCard` — variant: elevated/outlined/filled; size: sm/md/lg; optional onTap/onLongPress with InkWell
 - `AppChip` — variant: primary/secondary/neutral/success/warning/danger; size: sm/md/lg; selectable, deletable
 - `AppBadge` — same variant/size pattern; dot variant (no label) supported
+- `AppEmptyState` — icon/illustration, title, description, primary + secondary action button
+- `AppErrorState` — same structure as AppEmptyState with danger retry button and error icon default
 
