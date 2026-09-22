@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `AppRadius` â€” none, sm(4), md(8), lg(12), xl(16), xxl(24), full(999)
 - `AppElevation` â€” none, sm(1), md(3), lg(6), xl(12), xxl(24)
 - `AppDuration` — fast(100ms), normal(200ms), slow(300ms), emphasis(500ms), shimmer(1500ms)
+- `AppTheme.light` / `AppTheme.dark` — ThemeData built from all tokens; `AppColorsExtension` ThemeExtension for semantic colors
 - `AppTextStyle` — typography scale: display/headline/title/body/label, each lg/md/sm, using Inter via google_fonts
 - `AppTextStyle.textTheme` — TextTheme helper for use in ThemeData (PR 4)
 
