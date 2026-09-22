@@ -5,7 +5,9 @@ All notable changes to `my_design_system` will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.1.0] - 2026-09-22
+
+*Rilis pertama package my_design_system.*
 
 ### Added
 - Initial package scaffolding with `lib/src/{tokens,theme,components}/` structure
@@ -34,4 +36,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Halaman Catalog di `example/` — menampilkan semua komponen, dikelompokkan per kategori, dengan toggle light/dark di AppBar
 - Golden tests untuk AppButton (3 kasus), AppTextField (2), AppCard (2), AppChip (1), AppEmptyState (1) — 9 total; file di `test/goldens/`; di-generate di Windows 11 + Flutter 3.38.3
 - `.github/workflows/ci.yml` — CI pipeline: flutter analyze + flutter test (termasuk golden) pada setiap PR ke main; runner windows-latest (konsisten dengan platform generate golden)
+
 
