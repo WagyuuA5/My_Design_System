@@ -22,4 +22,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `AppTextStyle.textTheme` — TextTheme helper for use in ThemeData (PR 4)
 
 - `AppButton` — variant: primary/secondary/ghost/danger; size: sm/md/lg; state: loading, disabled; optional prefix/suffix icon
+- `AppTextField` — label, hint, helperText, errorText (error state), size: sm/md/lg, prefix/suffix icon & text
 
