@@ -32,4 +32,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `AppBottomSheet.show()` — static helper, DraggableScrollableSheet, optional title/subtitle, drag handle
 - `AppSnackbar.show()` — static helper, variant: info/success/warning/error, optional action
 - Halaman Catalog di `example/` — menampilkan semua komponen, dikelompokkan per kategori, dengan toggle light/dark di AppBar
+- Golden tests untuk AppButton (3 kasus), AppTextField (2), AppCard (2), AppChip (1), AppEmptyState (1) — 9 total; file di `test/goldens/`; di-generate di Windows 11 + Flutter 3.38.3
 
