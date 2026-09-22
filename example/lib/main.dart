@@ -1,26 +1,42 @@
 ﻿import 'package:flutter/material.dart';
+import 'package:my_design_system/my_design_system.dart';
+
+import 'catalog_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const CatalogApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class CatalogApp extends StatefulWidget {
+  const CatalogApp({super.key});
+
+  @override
+  State<CatalogApp> createState() => _CatalogAppState();
+}
+
+class _CatalogAppState extends State<CatalogApp> {
+  ThemeMode _themeMode = ThemeMode.light;
+
+  void _toggleTheme() {
+    setState(() {
+      _themeMode = _themeMode == ThemeMode.light
+          ? ThemeMode.dark
+          : ThemeMode.light;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'my_design_system — Catalog',
-      home: Scaffold(
-        appBar: AppBar(title: const Text('my_design_system')),
-        body: const Center(
-          child: Text(
-            'Catalog coming in PR 12!',
-            style: TextStyle(fontSize: 18),
-          ),
-        ),
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.light,
+      darkTheme: AppTheme.dark,
+      themeMode: _themeMode,
+      home: CatalogPage(
+        isDark: _themeMode == ThemeMode.dark,
+        onToggleTheme: _toggleTheme,
       ),
     );
   }
 }
-

@@ -29,4 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `AppEmptyState` — icon/illustration, title, description, primary + secondary action button
 - `AppErrorState` — same structure as AppEmptyState with danger retry button and error icon default
 - `AppLoadingSkeleton` — shimmer animation, shapes: rectangle/circle/pill; helper widgets: `AppSkeletonText`, `AppSkeletonCard`
+- `AppBottomSheet.show()` — static helper, DraggableScrollableSheet, optional title/subtitle, drag handle
+- `AppSnackbar.show()` — static helper, variant: info/success/warning/error, optional action
+- Halaman Catalog di `example/` — menampilkan semua komponen, dikelompokkan per kategori, dengan toggle light/dark di AppBar
 
