@@ -1,0 +1,37 @@
+﻿name: CI
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  analyze-and-test:
+    name: Flutter Analyze & Test
+    # PENTING: Runner ini harus konsisten dengan platform generate golden files.
+    # Golden file di-generate di Windows 11 (Flutter 3.38.3).
+    # Jika golden test gagal di runner ubuntu-latest, jalankan:
+    #   flutter test test/golden_test.dart --update-goldens
+    # di Windows lokal, lalu push golden file yang baru.
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.38.3"
+          channel: "stable"
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Flutter analyze
+        run: flutter analyze
+
+      - name: Flutter test (unit + golden)
+        run: flutter test
