@@ -7,4 +7,5 @@ export 'src/tokens/tokens.dart';
 // Theme
 export 'src/theme/theme.dart';
 
-// Components (exported in PR 5-11)
+// Components
+export 'src/components/components.dart';
