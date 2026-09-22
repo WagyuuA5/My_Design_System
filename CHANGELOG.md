@@ -23,4 +23,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `AppButton` — variant: primary/secondary/ghost/danger; size: sm/md/lg; state: loading, disabled; optional prefix/suffix icon
 - `AppTextField` — label, hint, helperText, errorText (error state), size: sm/md/lg, prefix/suffix icon & text
+- `AppCard` — variant: elevated/outlined/filled; size: sm/md/lg; optional onTap/onLongPress with InkWell
 
