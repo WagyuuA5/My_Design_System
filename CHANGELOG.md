@@ -28,4 +28,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `AppBadge` — same variant/size pattern; dot variant (no label) supported
 - `AppEmptyState` — icon/illustration, title, description, primary + secondary action button
 - `AppErrorState` — same structure as AppEmptyState with danger retry button and error icon default
+- `AppLoadingSkeleton` — shimmer animation, shapes: rectangle/circle/pill; helper widgets: `AppSkeletonText`, `AppSkeletonCard`
 
