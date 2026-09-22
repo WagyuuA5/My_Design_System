@@ -1,11 +1,10 @@
 ﻿// Copyright 2024 WagyuuA5. All rights reserved.
 // Use of this source code is governed by a MIT-style license.
 
-// ── Tokens ────────────────────────────────────────────────────────────────────
+// Tokens
 export 'src/tokens/tokens.dart';
 
-// ── Theme ─────────────────────────────────────────────────────────────────────
-// (exported in PR 3 & 4)
+// Theme
+export 'src/theme/theme.dart';
 
-// ── Components ────────────────────────────────────────────────────────────────
-// (exported in PR 5-11)
+// Components (exported in PR 5-11)
