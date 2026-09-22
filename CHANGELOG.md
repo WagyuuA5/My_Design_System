@@ -31,4 +31,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `AppLoadingSkeleton` — shimmer animation, shapes: rectangle/circle/pill; helper widgets: `AppSkeletonText`, `AppSkeletonCard`
 - `AppBottomSheet.show()` — static helper, DraggableScrollableSheet, optional title/subtitle, drag handle
 - `AppSnackbar.show()` — static helper, variant: info/success/warning/error, optional action
+- Halaman Catalog di `example/` — menampilkan semua komponen, dikelompokkan per kategori, dengan toggle light/dark di AppBar
 
